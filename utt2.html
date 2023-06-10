@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<!-- Forms & Input tags_imp-->
+<h2>Fill all the details below correctly</h2>
+<body>
+    <form action="backend.php"><!--yha pr action attribute yeh krega k apne form ko apn submit jab krenge toh apnko usko backend pr dena padega maanlo apn ne php use kia hai toh apn udhr denge-->
+<div>
+    Name: <input type="text" name="myname"><!--yha pr apn name aur role k beech br bhi use kr skte thai pr woh ek achi practice nhi-->
+</div>                       <!--yha apn input tag ko division tag k andr isilie likha kuki input ek inline element hai jabki div apna block element yaani woh ek poori line ki width leleta hai toh koi bhi dusra element next line se hi aaega-->
+<br>
+<div>
+    Role: <input type="text" name="myrole"><!--yha name attribute bas yeh bta rha hai k yeh key yaa woh naam hai jisse backend iss particular input ko lega yaa uski values lega-->
+</div>
+<br>
+<div>
+<label for="email">Email:</label>
+     <input type="email" name="my email" id="email"><!--yaha pr apn ne email mai label ka use kia hai issse yeh hoga k jese hi apn email pr click krenge toh woh automatically apn ko uske box pr le jaega jabki dusro mai esa nhi hoga-->
+</div>
+<br>
+<div>
+    Date: <input type="date" name="mydate">
+</div>
+<br>
+<div>
+    No of hrs: <input type="number" name="hrs">
+</div>
+<br>
+<div>
+    Are you eligible: <input type="checkbox" name="yo">
+</div>
+<br>
+<div>
+    Gender: Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Others <input type="radio" name="gender">
+</div><!--yeh yha pr ek hi ki value lega yaa toh male yaa female yaa others aur esa isilie hua kuki apn ne neeme input k lie same name rakha hai jaan mooch k-->
+<br>
+
+<div>
+    Write about yourself:<br>
+    <textarea name="text" rows="10" cols="70"></textarea>
+
+</div>
+<br>
+<div>
+<label for="car">Car</label>
+<select name="myCar" id="car"><!--yha id mai whi naam aaega jo apn ne label k for mai dia hai-->
+<option value="rr" selected>Range Rover</option>
+<option value="bug" >Bugati</option>
+<option value="fr" >Fortuner</option>
+</select>
+</div>
+<br>
+<div>
+
+    <input type="submit" name="Submit now">  <input type="reset" name="reset now">
+</div>
+    </form>
+</body>
+</html>
